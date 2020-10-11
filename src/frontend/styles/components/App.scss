@@ -1,0 +1,10 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+span[role='img'] {
+  margin-right: 0.25em;
+}
