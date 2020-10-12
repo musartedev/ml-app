@@ -1,6 +1,8 @@
 # Node template
 package-lock.json
 
+#public
+src/server/public/
 
 # Logs
 logs
