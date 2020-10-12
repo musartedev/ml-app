@@ -20,7 +20,7 @@ export default {
       },
       picture: 'http://http2.mlstatic.com/D_854455-MLA42163942350_062020-O.jpg',
       condition: 'new',
-      free_shipping: false,
+      free_shipping: true,
       sold_quantity: 500,
       address: 'Capital Federal',
     },

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import '../../../styles/components/common/Breadcrumb.scss';
@@ -8,10 +9,10 @@ const Breadcrumb = ({ categories }) => {
     <nav className="Breadcrumb container">
       <ol>
         {categories.map(category => (
-          <li className="Breadcrumb__item">
-            <a href="/" title={category}>
+          <li className="Breadcrumb__item" key={category}>
+            <Link to="/" title={category}>
               {category}
-            </a>
+            </Link>
           </li>
         ))}
       </ol>

@@ -1,8 +1,8 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
-import FreeShippingIcon from '../../assets/img/icons/shipping.png';
-import '../../styles/components/ItemList/ItemCard.scss';
+import FreeShippingIcon from '../../../assets/img/icons/shipping.png';
+import '../../../styles/components/ItemList/ItemCard.scss';
 
 const Item = ({ data: { title, price, free_shipping, picture, address } }) => {
   return (

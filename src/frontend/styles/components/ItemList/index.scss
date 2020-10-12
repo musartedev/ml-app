@@ -14,4 +14,8 @@
       border: none;
     }
   }
+
+  &__container {
+    padding: 0 $default-spacing;
+  }
 }

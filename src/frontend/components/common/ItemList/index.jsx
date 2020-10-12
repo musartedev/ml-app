@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ItemCard from './ItemCard';
 
-import '../../styles/components/ItemList/index.scss';
+import '../../../styles/components/ItemList/index.scss';
 
 const ItemList = ({ items }) => {
   return (
-    <section className="container">
+    <section className="Item-list__container container">
       <ul className="Item-list">
         {items.map(item => (
           <li key={item.id}>
