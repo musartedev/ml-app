@@ -1,0 +1,53 @@
+@import '../../variables';
+@import '../../mixins';
+
+.Header {
+  background-color: $primary;
+
+  &__content {
+    @include max-width;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: $default-spacing;
+    place-items: center;
+    padding: $default-spacing;
+  }
+
+  &__brand {
+    img {
+      height: 40px;
+      vertical-align: middle;
+    }
+  }
+
+  &__search {
+    width: 100%;
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 50px;
+
+      & > * {
+        border-color: transparent;
+      }
+
+      input {
+        height: 20px;
+        padding: $default-spacing / 2;
+        border-color: transparent;
+        &:focus {
+          @include default-outline;
+        }
+        &::placeholder {
+          color: rgba($gray, 0.7);
+        }
+      }
+
+      button {
+        &:focus {
+          @include default-outline;
+        }
+      }
+    }
+  }
+}
