@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="Header">
-      <div className="Header__content">
+      <div className="Header__content container">
         <div className="Header__brand">
           <img src={Logo} alt="Mercado Libre Logo" />
         </div>

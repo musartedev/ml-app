@@ -5,8 +5,22 @@ body {
   @include main-font-family;
   margin: 0;
   background-color: $background;
+  color: $gray;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 span[role='img'] {
   margin-right: 0.25em;
+}
+
+.container {
+  @include max-width;
 }
