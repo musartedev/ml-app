@@ -1,0 +1,29 @@
+@import '../../variables';
+@import '../../mixins';
+
+.Breadcrumb {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $default-spacing 0;
+    padding: 0 $default-spacing;
+
+    li {
+      &:not(:last-child)::after {
+        content: '>';
+        color: $gray;
+        padding: $default-spacing / 2;
+      }
+
+      &:last-child {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (min-width: $device-xl + $default-spacing) {
+    ol {
+      padding: 0;
+    }
+  }
+}

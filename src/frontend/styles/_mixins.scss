@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap');
+
+@mixin main-font-family {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@mixin flex-all-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin max-width {
+  max-width: $max-width;
+  margin: auto;
+}
+
+@mixin default-outline {
+  outline: 1px solid $gray;
+}

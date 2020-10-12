@@ -1,0 +1,10 @@
+@import '../variables';
+@import '../mixins';
+
+.NotFound {
+  @include flex-all-centered;
+  flex-direction: column;
+  > * {
+    margin: $default-spacing;
+  }
+}
