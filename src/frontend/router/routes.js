@@ -19,7 +19,7 @@ const ROUTES = [
     auth: false,
   },
   {
-    path: ['/items'],
+    path: ['/items/:id'],
     key: 'ITEMS',
     exact: true,
     component: ItemDetail,

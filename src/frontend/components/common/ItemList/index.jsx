@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import ItemCard from './ItemCard';
 
@@ -10,7 +11,9 @@ const ItemList = ({ items }) => {
       <ul className="Item-list">
         {items.map(item => (
           <li key={item.id}>
-            <ItemCard data={item} />
+            <Link to={`/items/${item.id}`} className="no-decoration">
+              <ItemCard data={item} />
+            </Link>
           </li>
         ))}
       </ul>
@@ -22,9 +25,7 @@ ItemList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      price: PropTypes.shape({
-        amount: PropTypes.number,
-      }),
+      price: PropTypes.string,
       free_shipping: PropTypes.bool,
       picture: PropTypes.string,
       address: PropTypes.string,

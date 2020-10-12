@@ -20,4 +20,10 @@
       }
     }
   }
+
+  @media (min-width: $device-xl + $default-spacing) {
+    ol {
+      padding: 0;
+    }
+  }
 }
