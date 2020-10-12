@@ -10,12 +10,13 @@
   font-size: 0.6em;
   padding: $default-spacing 0;
   background-color: $white;
-  border-bottom: 1px solid rgba($gray, .2);
+  border-bottom: 1px solid rgba($gray, 0.2);
   color: $black;
 
   h2 {
     margin: 0;
     font-weight: 400;
+    margin-bottom: $default-spacing;
   }
 
   &__picture {
@@ -36,7 +37,7 @@
     display: flex;
     align-items: center;
     font-size: 2em;
-    margin-bottom: 32px;
+    margin-bottom: $default-spacing;
 
     img {
       margin-left: $default-spacing / 2;
@@ -69,6 +70,14 @@
   }
 
   @media (min-width: $device-lg) {
+    h2 {
+      margin-bottom: none;
+    }
+
+    &__price {
+      margin-bottom: $default-spacing * 2;
+    }
+
     &__title {
       display: grid;
       grid-template-columns: 3fr 1fr;

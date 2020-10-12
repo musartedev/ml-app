@@ -1,0 +1,16 @@
+@import '../../variables';
+@import '../../mixins';
+
+.Button {
+  width: 100%;
+  background-color: $secondary;
+  color: $white;
+  padding: $default-spacing * 0.8;
+  font-size: 18px;
+  font-weight: 400;
+  border-color: $secondary;
+  border-radius: $default-radius;
+  border-style: solid;
+  box-shadow: none;
+  cursor: pointer;
+}

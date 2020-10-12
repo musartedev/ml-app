@@ -1,4 +1,5 @@
 import Home from '../pages/Home';
+import ItemDetail from '../pages/ItemDetail';
 import NotFound from '../pages/NotFound';
 import Search from '../pages/Search';
 
@@ -15,6 +16,13 @@ const ROUTES = [
     key: 'SEARCH',
     exact: true,
     component: Search,
+    auth: false,
+  },
+  {
+    path: ['/items'],
+    key: 'ITEMS',
+    exact: true,
+    component: ItemDetail,
     auth: false,
   },
   {

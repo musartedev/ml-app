@@ -1,4 +1,4 @@
-export default {
+export const searchResults = {
   author: {
     name: 'Mariangélica',
     lastname: 'Useche',
@@ -67,4 +67,31 @@ export default {
       address: 'Capital Federal',
     },
   ],
+};
+
+export const itemResponse = {
+  author: {
+    name: 'Mariangélica',
+    lastname: 'Useche',
+  },
+  item: {
+    id: 'MLA825645926',
+    title: 'Teléfono Inalámbrico Philips D131 Negro',
+    price: {
+      currency: 'ARS',
+      decimals: '0.95',
+      amount: 3598,
+    },
+    picture: 'http://http2.mlstatic.com/D_869759-MLA32614537220_102019-O.jpg',
+    condition: 'new',
+    free_shipping: true,
+    sold_quantity: 500,
+    categories: [
+      'Celulares y Teléfonos',
+      'Telefonía Fija e Inalámbrica',
+      'Teléfonos',
+    ],
+    description:
+      'Gracias al diseño ergonómico e innovador de este teléfono Philips, te olvidarás de los cables y podrás hablar desde tu oficina o cualquier rincón de tu casa. Además, disfrutarás de gran calidad de sonido y alcance en todas tus conversaciones.\n\nComodidad y practicidad\nSu función manos libres facilitará tu rutina, charlá cuando quieras sin dejar de hacer otras actividades.',
+  },
 };
