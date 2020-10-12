@@ -1,8 +1,10 @@
+@import '../variables';
+@import '../mixins';
+
 body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
+  @include main-font-family;
   margin: 0;
+  background-color: $background;
 }
 
 span[role='img'] {

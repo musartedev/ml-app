@@ -1,6 +1,12 @@
 import React from 'react';
+import Header from './Layout/Header';
+
 import '../styles/components/App.scss';
 
-const App = () => <h1>Mercadolibre.</h1>;
+const App = () => (
+  <div>
+    <Header />
+  </div>
+);
 
 export default App;

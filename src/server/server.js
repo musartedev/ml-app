@@ -32,6 +32,7 @@ const cb = (req, res) => {
       <meta charset="utf-8" />
       <title>Mercado Libre</title>
       <link rel="stylesheet" href="assets/app.css" type="text/css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
       <meta
         name="description"
         content="La comunidad de compra y venta online más grande de América Latina."
