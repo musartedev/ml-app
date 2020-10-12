@@ -1,0 +1,17 @@
+@import '../../variables';
+@import '../../mixins';
+
+.Breadcrumb {
+  ol {
+    display: flex;
+    margin: $default-spacing 0;
+    padding: 0;
+
+    li {
+      &:not(:last-child)::after {
+        content: '>';
+        padding: $default-spacing / 2;
+      }
+    }
+  }
+}
