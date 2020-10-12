@@ -1,6 +1,6 @@
 {
   "name": "ml-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Mercadolibre App: Codo a codo hasta que llegue lo mejor ",
   "main": "index.js",
   "scripts": {
