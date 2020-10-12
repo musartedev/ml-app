@@ -12,7 +12,7 @@ const Item = ({ data: { title, price, free_shipping, picture, address } }) => {
       </div>
       <div className="Item-card__info">
         <div className="Item-card__price">
-          <span>{`$ ${price.amount}`}</span>
+          <span>{price}</span>
           {free_shipping && <img src={FreeShippingIcon} alt="Free Shipping" />}
         </div>
         <div className="Item-card__title">
@@ -27,9 +27,7 @@ const Item = ({ data: { title, price, free_shipping, picture, address } }) => {
 Item.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string,
-    price: PropTypes.shape({
-      amount: PropTypes.number,
-    }),
+    price: PropTypes.string,
     free_shipping: PropTypes.bool,
     picture: PropTypes.string,
     address: PropTypes.string,

@@ -37,12 +37,13 @@ const setResponse = html => {
     <head>
       <meta charset="utf-8" />
       <title>Mercado Libre</title>
-      <link rel="stylesheet" href="assets/app.css" type="text/css" />
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
       <meta
-        name="description"
-        content="La comunidad de compra y venta online más grande de América Latina."
+      name="description"
+      content="La comunidad de compra y venta online más grande de América Latina."
       />
+      <base href="/" />
+      <link rel="stylesheet" href="assets/app.css" type="text/css" />
     </head>
     <body>
       <div id="app">${html}</div>

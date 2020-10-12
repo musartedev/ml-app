@@ -23,7 +23,7 @@ const Item = ({
               <span className="condition__sold-quantity">{`${sold_quantity} vendidos`}</span>
             </div>
             <h1>{title}</h1>
-            <p className="Item__price">{`$ ${price.amount}`}</p>
+            {price && <p className="Item__price">{price}</p>}
             <div className="Item__action">
               <Button title="Comprar" onClick={() => {}} />
             </div>
@@ -42,9 +42,7 @@ Item.propTypes = {
   item: PropTypes.shape({
     title: PropTypes.string,
     picture: PropTypes.string,
-    pice: PropTypes.shape({
-      amount: PropTypes.string,
-    }),
+    pice: PropTypes.string,
     condition: PropTypes.string,
     sold_quantity: PropTypes.number,
     description: PropTypes.string,
