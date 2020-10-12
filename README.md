@@ -2,10 +2,6 @@
 
 ✨ "Codo a codo hasta que llegue lo mejor"
 
-# 🎬 Movie Curiosity
-
-✨ Find your favorite movie and learn everything about it!
-
 ## 🚀 Getting Started
 
 1. Clone this project.
